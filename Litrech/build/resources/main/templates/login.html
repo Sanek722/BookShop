@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+<header>
+  <div class="menu">
+    <div class="menu_v">
+      <p>menu</p>
+    </div>
+    <div class="menu-content">
+      <ul>
+        <li><a href="/">Books</a></li>
+        <li><a href="/basket">Product</a></li>
+        <li><a href="logout">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+</body>
+<table>
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>author</th>
+    <th>namebook</th>
+    <th>price</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="product : ${products}">
+    <td th:text="${product.id}"></td>
+    <td th:text="${product.author}"></td>
+    <td th:text="${product.namebook}"></td>
+    <td th:text="${product.price}"></td>
+  </tr>
+  </tbody>
+</table>
+<form method="post" action="/delete">
+  <h1>id для удаления</h1>
+  <input type="number" name="id" required>
+  <input type="submit" value="Удалить">
+</form>
+<h1>Ниже Обновление цены</h1>
+<form method="post" action="/update">
+  <h1>id</h1>
+  <input type="number" name="id_add" required>
+  <h1>цена</h1>
+  <input type="number" name="price_update" required>
+  <input type="submit" value="добавить">
+</form>
+<h1>Ниже добавление</h1>
+<form method="post" action="/add">
+  <h1>id</h1>
+  <input type="number" name="id_add" required>
+  <h1>автор</h1>
+  <input type="text" name="author_add" required>
+  <h1>название</h1>
+  <input type="text" name="namebook_add" required>
+  <h1>цена</h1>
+  <input type="number" name="price_add" required>
+  <input type="submit" value="добавить">
+</form>
+</html>

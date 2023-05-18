@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="menu_v">
+                <p>menu</p>
+            </div>
+            <div class="menu-content">
+                <ul>
+                    <li><a href="/">Books</a></li>
+                    <li><a href="/products">Product</a></li>
+                    <li><a href="logout">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+</body>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>author</th>
+        <th>namebook</th>
+        <th>price</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="basket : ${baskets}">
+        <td th:text="${basket.id}"></td>
+        <td th:text="${basket.author}"></td>
+        <td th:text="${basket.namebook}"></td>
+        <td th:text="${basket.price}"></td>
+    </tr>
+    </tbody>
+</table>
+<h2>Общая стоимость товаров:</h2>
+<h2 th:text="${full_price}"></h2>
+<form method="post" action="/clear">
+    <h1></h1>
+    <input type="submit" value="Очистить корзину">
+</form>
+</html>

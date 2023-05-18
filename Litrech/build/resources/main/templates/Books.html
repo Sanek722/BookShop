@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<header>
+    <div class="menu">
+        <div class="menu_v">
+            <p>menu</p>
+        </div>
+        <div class="menu-content">
+            <ul>
+                <li><a href="/basket">Busket</a></li>
+                <li><a href="/products">Product</a></li>
+                <li><a href="logout">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<body>
+<section id="section-1">
+    <div class="str2_first">
+        <div class="str2_first_d">
+            <img src="1.png" width="250" height="250">
+            <section id="buy" >
+                <div class="cin1" th:each="product : ${products}">
+                    <p th:if="${product.id == 1}">Автор: <span th:text="${product.author}"></span></p>
+                </div>
+                <div class="cin2" th:each="product : ${products}">
+                    <p th:if="${product.id == 1}">Цена: <span th:text="${product.price}"></span></p>
+                </div>
+                <div class="cin2" th:each="product : ${products}">
+                    <p th:if="${product.id == 1}">Название: <span th:text="${product.namebook}"></span></p>
+                </div>
+                <form method="post" action="/drop">
+                    <p>id:</p>
+                    <input type="number" value="1" name="id" readonly>
+                    <input type="submit" value="Добавить">
+                </form>
+            </section>
+        </div>
+    </div>
+    <div class="str2_first">
+        <div class="str2_first_d">
+            <img src="2.png" width="250" height="250">
+            <section id="buy" >
+                <div class="cin1" th:each="product : ${products}">
+                    <p th:if="${product.id == 2}">Автор: <span th:text="${product.author}"></span></p>
+                </div>
+                <div class="cin2" th:each="product : ${products}">
+                    <p th:if="${product.id == 2}">Цена: <span th:text="${product.price}"></span></p>
+                </div>
+                <div class="cin2" th:each="product : ${products}">
+                    <p th:if="${product.id == 2}">Название: <span th:text="${product.namebook}"></span></p>
+                </div>
+                <form method="post" action="/drop">
+                    <p>id:</p>
+                    <input type="number" value="2" name="id" readonly>
+                    <input type="submit" value="Добавить">
+                </form>
+            </section>
+        </div>
+    </div>
+    <div class="str2_first">
+        <div class="str2_first_d">
+            <img src="3.png" width="250" height="250">
+            <section id="buy" >
+                <div class="cin1" th:each="product : ${products}">
+                    <p th:if="${product.id == 3}">Автор: <span th:text="${product.author}"></span></p>
+                </div>
+                <div class="cin2" th:each="product : ${products}">
+                    <p th:if="${product.id == 3}">Цена: <span th:text="${product.price}"></span></p>
+                </div>
+                <div class="cin2" th:each="product : ${products}">
+                    <p th:if="${product.id == 3}">Название: <span th:text="${product.namebook}"></span></p>
+                </div>
+                <form method="post" action="/drop">
+                    <p>id:</p>
+                    <input type="number" value="3" name="id" readonly>
+                    <input type="submit" value="Добавить">
+                </form>
+            </section>
+        </div>
+    </div>
+    <div class="str2_first">
+        <div class="str2_first_d">
+            <img src="4.png" width="250" height="250">
+            <section id="buy" >
+                <div class="cin1" th:each="product : ${products}">
+                    <p th:if="${product.id == 4}">Автор: <span th:text="${product.author}"></span></p>
+                </div>
+                <div class="cin2" th:each="product : ${products}">
+                    <p th:if="${product.id == 4}">Цена: <span th:text="${product.price}"></span></p>
+                </div>
+                <div class="cin2" th:each="product : ${products}">
+                    <p th:if="${product.id == 4}">Название: <span th:text="${product.namebook}"></span></p>
+                </div>
+                <form method="post" action="/drop">
+                    <p>id:</p>
+                    <input type="number" value="4" name="id" readonly>
+                    <input type="submit" value="Добавить">
+                </form>
+            </section>
+        </div>
+    </div>
+    <div class="str2_first">
+        <div class="str2_first_d">
+            <img src="5.png" width="250" height="250">
+            <section id="buy" >
+                <div class="cin1" th:each="product : ${products}">
+                    <p th:if="${product.id == 5}">Автор: <span th:text="${product.author}"></span></p>
+                </div>
+                <div class="cin2" th:each="product : ${products}">
+                    <p th:if="${product.id == 5}">Цена: <span th:text="${product.price}"></span></p>
+                </div>
+                <div class="cin2" th:each="product : ${products}">
+                    <p th:if="${product.id == 5}">Название: <span th:text="${product.namebook}"></span></p>
+                </div>
+                <form method="post" action="/drop">
+                    <p>id:</p>
+                    <input type="number" value="5" name="id" readonly>
+                    <input type="submit" value="Добавить">
+                </form>
+            </section>
+        </div>
+    </div>
+
+</section>
+<footer>2023© Student MIREA. ALL RIGHTS RESERVED</footer>
+</body>
+</html>

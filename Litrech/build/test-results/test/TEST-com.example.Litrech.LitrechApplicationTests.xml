@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.Litrech.LitrechApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-05-18T05:56:41" hostname="COMPIK" time="0.583">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.Litrech.LitrechApplicationTests" time="0.583"/>
+  <system-out><![CDATA[08:56:36.512 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Neither @ContextConfiguration nor @ContextHierarchy found for test class [LitrechApplicationTests]: using SpringBootContextLoader
+08:56:36.519 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader -- Could not detect default resource locations for test class [com.example.Litrech.LitrechApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+08:56:36.519 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.Litrech.LitrechApplicationTests]: LitrechApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+08:56:36.547 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using ContextCustomizers for test class [LitrechApplicationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+08:56:36.623 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider -- Identified candidate component class: file [C:\Users\miste\IdeaProjects\Litrech\build\classes\java\main\com\example\Litrech\LitrechApplication.class]
+08:56:36.624 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.Litrech.LitrechApplication for test class com.example.Litrech.LitrechApplicationTests
+08:56:36.744 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using TestExecutionListeners for test class [LitrechApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+08:56:36.745 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener -- Before test class: class [LitrechApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.6)
+
+2023-05-18T08:56:37.132+03:00  INFO 13048 --- [    Test worker] c.e.Litrech.LitrechApplicationTests      : Starting LitrechApplicationTests using Java 20.0.1 with PID 13048 (started by miste in C:\Users\miste\IdeaProjects\Litrech)
+2023-05-18T08:56:37.133+03:00  INFO 13048 --- [    Test worker] c.e.Litrech.LitrechApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2023-05-18T08:56:37.933+03:00  INFO 13048 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-18T08:56:38.005+03:00  INFO 13048 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 2 JPA repository interfaces.
+2023-05-18T08:56:38.463+03:00  INFO 13048 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-18T08:56:38.718+03:00  INFO 13048 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@16f0ec18
+2023-05-18T08:56:38.720+03:00  INFO 13048 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-18T08:56:38.772+03:00  INFO 13048 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-18T08:56:38.815+03:00  INFO 13048 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-18T08:56:39.348+03:00  INFO 13048 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-05-18T08:56:40.095+03:00  INFO 13048 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-18T08:56:40.103+03:00  INFO 13048 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-18T08:56:41.308+03:00  WARN 13048 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-18T08:56:41.882+03:00  INFO 13048 --- [    Test worker] c.e.Litrech.LitrechApplicationTests      : Started LitrechApplicationTests in 5.076 seconds (process running for 6.724)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
